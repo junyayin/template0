@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  color: white; /* white is #fff */
+  background-color: #fff;
+  font-family: sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: pink; /* #ffc0cb */
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { 
+  font-family: sans-serif;
+  color: blue;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px white;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+#nav-list a {  
+  color: black;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #fff;
+}
+#nav-list a span {
+  font-size: 2.0em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #ffc0cb; /*pink*/
+  border-top: 20px;
+  background-image: none;
+  background-size: auto;
+  display: block;
+  line-height: 20px;
+}
+
+ }
+.panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+.panel-footer section hr {
+    width: 50%;
+  }
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span, #contactus > span {
+  font-size: 1.3em;
+  font-weight: bold;
+  
+}
+#hours > p, #address > p, #contactus > p {
+  color: blue;
+  font-size: .8em;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+/* END FOOTER */
+
+
+
+
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 0;
+  border: 1px solid blue;
+}
+
+#first-tile, #second-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 1px solid black;
+  overflow: hidden;
+}
+#first-tile:hover, #second-tile:hover, #map-tile:hover {
+  box-shadow: 0 0 0;
+}
+#first-tile {
+  background: url('#') no-repeat;
+  background-position: center;
+}
+#second-tile {
+  background: url('#') no-repeat;
+  background-position: center;
+}
+#first-tile span, #second-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: pink;
+  color: black;
+  opacity: .8;
+}
+.section {
+    background-color: #c0c0c0;
+    border: 1px solid black;
+    position: relative;
+    min-height: 200px;
+    margin-right: 15px;
+    margin-left: auto;
+    margin-bottom: 15px;
+    padding: 20px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    min-width: 300px;
+    overflow: hidden;
+
+}        
+h2{
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+}
+
+/* END HOME PAGE */
+
+
+
+/************* Responsive framework *************/
+.row {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    
+}
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('#') no-repeat;   
+    height: 675px;
+  }
+  .section {
+    height: 600px; 
+  }
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container .jumbotron {
+    height: 558px;
+  }
+  /* End Home Page */
+}
+
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    height: 432px;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (min-width: 480px) and (max-width: 767px) {
+   .container .jumbotron {
+    height: 380px;
+  }
+
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { 
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { 
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+/********** Super extra small devices Only **********/
+@media (max-width: 479px) {
+  .container .jumbotron {
+    height: 280px;
+  }
+  /* Header */
+  .navbar-brand h1 { 
+    padding-top: 5px;
+    font-size: 3vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+  #first-tile, #second-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
+ 
+
+ 
+
+
+  /* Home Page 
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+  #first-tile, #second-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+  */
